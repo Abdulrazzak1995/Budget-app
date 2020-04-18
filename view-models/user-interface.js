@@ -60,7 +60,7 @@ showBalance() {
 submitExpenseForm() {
     const expenseValue = this.expenseInput.value;
     const amountValue = this.amountInput.value;
-    //console.log(amountValue);
+     //console.log(amountValue);
 
     if (expenseValue === "" || amountValue === "" || amountValue < 0) 
     {
@@ -161,7 +161,7 @@ deleteExpense(element) {
     this.expenseList.removeChild(parent);
 
     // delete from list
-    let tempList = this.itemList.filter(function (item) {
+    let tempList = this.itemList.filter(function (expense) {
         return expense.id !== id;
     });
 
